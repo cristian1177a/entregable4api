@@ -1,0 +1,66 @@
+@page "/detalle/{id}"
+@using Model;
+@using Util;
+@inject PersClient client;
+<PageTitle>Detalle-Personajes</PageTitle>
+
+<nav class="navbar navbar-expand-lg fondo">
+  <div class="container-fluid">
+    <NavLink class="navbar-brand" href=""><img src="logo.png" alt="logo" width="60px">  &nbsp; &nbsp; Servicio Api</NavLink>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <NavLink class="nav-link active" aria-current="page" href="">Inicio</NavLink>
+        </li>
+        <li class="nav-item">
+            <NavLink class="nav-link" href="personajes">Personajes</NavLink>
+        </li>
+        <li class="nav-item">
+            <NavLink class="nav-link" href="contacto">Contacto</NavLink>
+        </li>
+      </ul> 
+       <div class="d-flex">
+       <img src="logo.png" alt="imagen" width="60px">
+      </div>  
+    </div>
+  </div>
+</nav>
+<main class="container p-5">
+
+  @if (personaje != null)
+  {
+    <div class="card mb-3" style="max-width: 800px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img class="card-img-top" src="@personaje.image" alt="Avatar" width="100px">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Nombre: @personaje.name</h5>
+            <p class="card-text">Estado: @personaje.status</p>
+            <p class="card-text">Ubicación: @personaje.location.name</p>
+            <p class="card-text">Género: @personaje.gender</p>
+
+
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+
+</main>
+@code {
+    private Personaje personaje;
+
+    [Parameter]
+    public string id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        personaje = await client.GetPersonaje(id);
+    }
+}

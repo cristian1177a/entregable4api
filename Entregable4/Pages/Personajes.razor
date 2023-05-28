@@ -1,0 +1,66 @@
+@page "/personajes"
+@using Model;
+@using Util;
+@inject PersClient client;
+<PageTitle>Personajes</PageTitle>
+
+<nav class="navbar navbar-expand-lg fondo">
+  <div class="container-fluid">
+    <NavLink class="navbar-brand" href=""><img src="logo.png" alt="logo" width="60px">  &nbsp; &nbsp; Servicio Api</NavLink>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <NavLink class="nav-link active" aria-current="page" href="">Inicio</NavLink>
+        </li>
+        <li class="nav-item">
+            <NavLink class="nav-link" href="personajes">Personajes</NavLink>
+        </li>
+        <li class="nav-item">
+            <NavLink class="nav-link" href="contacto">Contacto</NavLink>
+        </li>
+      </ul> 
+       <div class="d-flex">
+       <img src="logo.png" alt="imagen" width="60px">
+      </div>  
+    </div>
+  </div>
+</nav>
+
+<main class="container p-5">
+
+  <h1>Lista de personajes</h1>
+  <div class="row">
+  @foreach (Personaje personaje in personajes)
+  {
+    <div class="col-4 d-inline-block p-2">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Nombre: @personaje.name</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Status: @personaje.status</li>
+          <li class="list-group-item">Specie: @personaje.species</li>
+        </ul>
+        <div class="card-body">
+           <a class="card-link" href="detalle/@personaje.id">Ver Detalle</a>
+        </div>
+      </div>
+    </div>
+  }
+</div>
+</main>
+
+@code {
+
+    private Personaje personaje = new Personaje();
+    private List<Personaje> personajes = new List<Personaje>();
+    protected override async Task OnInitializedAsync()
+    {
+        for (int i = 1; i < 50; i++) {
+            personajes.Add(await client.GetPersonaje(i.ToString()));
+        }
+    }
+}

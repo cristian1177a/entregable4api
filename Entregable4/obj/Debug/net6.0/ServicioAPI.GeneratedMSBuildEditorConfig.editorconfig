@@ -1,0 +1,49 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = ServicioAPI
+build_property.RootNamespace = ServicioAPI
+build_property.ProjectDir = c:\Users\corre\OneDrive\Escritorio\C#\Cristian-Pablo-Valen-Api\Entregable4\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\corre\OneDrive\Escritorio\C#\Cristian-Pablo-Valen-Api\Entregable4
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/corre/OneDrive/Escritorio/C\#/Cristian-Pablo-Valen-Api/Entregable4/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/corre/OneDrive/Escritorio/C\#/Cristian-Pablo-Valen-Api/Entregable4/Pages/Contacto.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/corre/OneDrive/Escritorio/C\#/Cristian-Pablo-Valen-Api/Entregable4/Pages/Detalle.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV0YWxsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/corre/OneDrive/Escritorio/C\#/Cristian-Pablo-Valen-Api/Entregable4/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/corre/OneDrive/Escritorio/C\#/Cristian-Pablo-Valen-Api/Entregable4/Pages/Personajes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYWplcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/corre/OneDrive/Escritorio/C\#/Cristian-Pablo-Valen-Api/Entregable4/Shared/Hijo_index.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEhpam9faW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/corre/OneDrive/Escritorio/C\#/Cristian-Pablo-Valen-Api/Entregable4/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/corre/OneDrive/Escritorio/C\#/Cristian-Pablo-Valen-Api/Entregable4/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

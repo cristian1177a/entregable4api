@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\corre\\OneDrive\\Escritorio\\C#\\Cristian-Pablo-Valen-Api\\Entregable4\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\corre\\OneDrive\\Escritorio\\C#\\Cristian-Pablo-Valen-Api\\Entregable4\\obj\\Debug\\net6.0\\build-gz\\1s0ptm+A.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\corre\\OneDrive\\Escritorio\\C#\\Cristian-Pablo-Valen-Api\\Entregable4\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\corre\\OneDrive\\Escritorio\\C#\\Cristian-Pablo-Valen-Api\\Entregable4\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\corre\\OneDrive\\Escritorio\\C#\\Cristian-Pablo-Valen-Api\\Entregable4\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\corre\\OneDrive\\Escritorio\\C#\\Cristian-Pablo-Valen-Api\\Entregable4\\wwwroot\\logo.png",
+      "PackagePath": "staticwebassets\\logo.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ServicioAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ServicioAPI.props",
+      "PackagePath": "build\\ServicioAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ServicioAPI.props",
+      "PackagePath": "buildMultiTargeting\\ServicioAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ServicioAPI.props",
+      "PackagePath": "buildTransitive\\ServicioAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,77 @@
+@page "/contacto"
+
+<PageTitle>Index</PageTitle>
+
+<nav class="navbar navbar-expand-lg fondo">
+  <div class="container-fluid">
+    <NavLink class="navbar-brand" href=""><img src="logo.png" alt="logo" width="60px">  &nbsp; &nbsp; Servicio Api</NavLink>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <NavLink class="nav-link active" aria-current="page" href="">Inicio</NavLink>
+        </li>
+        <li class="nav-item">
+            <NavLink class="nav-link" href="personajes">Personajes</NavLink>
+        </li>
+        <li class="nav-item">
+            <NavLink class="nav-link" href="contacto">Contacto</NavLink>
+        </li>
+      </ul> 
+       <div class="d-flex">
+       <img src="logo.png" alt="imagen" width="60px">
+      </div>  
+    </div>
+  </div>
+</nav>
+
+<main class="p-2 container">
+  <div class="d-flex justify-content-center">
+  <form @onsubmit="enviar" class="container ">
+    <h1 >Formulario de contacto</h1>
+    <div class="mb-3 " >
+      <label for="exampleInputEmail1" class="form-label">Nombre:</label>
+      <input type="text" class="form-control" id="exampleInputEmail1"
+        aria-describedby="emailHelp" required @bind="nombre">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Correo:</label>
+      <input type="email" class="form-control" id="exampleInputEmail1"
+        aria-describedby="emailHelp" required @bind="correo">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Telefono:</label>
+      <input type="number" class="form-control" id="exampleInputEmail1"
+        aria-describedby="emailHelp" required @bind="telefono">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Mensaje:</label><br>
+      <textarea cols="100" rows="5" required @bind="mensaje"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+  </div>
+  <div class="p-3">
+   
+    @if(Show){
+       <h3>Contacto que acaba de enviar:</h3>
+        <p>Hola soy, @nombre, Quiero contactarme con ustedes por lo siguiente:<br>@mensaje. <br> Pueden comunicarse conmigo en: <br>
+        Correo electrónico: @correo <br>
+        Teléfono: @telefono
+        </p>
+    }
+  </div>  
+</main>
+@code{
+    private string? nombre {get;set;}
+    private string? correo {get;set;}
+
+    private string? telefono {get;set;}
+    private string? mensaje {get;set;}
+    public bool Show = false;
+  public void enviar(){
+    this.Show=true;
+  }
+}
